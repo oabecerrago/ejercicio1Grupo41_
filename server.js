@@ -9,7 +9,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Conexion a base de datos
-
 mongoose.connect("mongodb+srv://prog_web:ProgWebMintic2022@clusterprogweb.4nucx.mongodb.net/ejegrupo41db?retryWrites=true&w=majority");
 
 //operaciones crud
