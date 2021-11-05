@@ -16,6 +16,16 @@ router.get('/', (req, res) => {
     res.send("Este es el inicio de mi primera API")
 });
 
+//Consultar todos
+router.get('/Usuario', (req, res) => {
+    UsuarioSchema.find(function(err, res){
+        if(err){
+            console.log("error leyendo los Usuarios");
+        }else{
+            res.send(datos);
+        }
+    }) 
+})
 //insertar
 
 router.post('/Usuario', (req, res)=> {
